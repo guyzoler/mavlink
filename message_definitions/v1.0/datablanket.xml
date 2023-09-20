@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<mavlink>
+
+    <include>ardupilotmega.xml</include>
+    <!-- <version>9</version> -->
+    <dialect>19</dialect>
+
+    <enums>
+        <enum name="MAV_TYPE">
+			<entry value="44" name="MAV_TYPE_LANDING_PAD">
+				<description>Landing Pad</description>
+			</entry>
+		</enum>
+    </enums>
+
+    <messages>
+        <message id="12000" name="PAD_CMD">
+            <description>Command a landing pad light and color.</description>
+            <field type="uint8_t" name="light">On \ Off</field>
+			<field type="uint8_t" name="Red">Red Value</field>
+			<field type="uint8_t" name="Green">Green Value</field>
+			<field type="uint8_t" name="Blue">Blue Value</field>
+        </message>
+    </messages>
+</mavlink>
