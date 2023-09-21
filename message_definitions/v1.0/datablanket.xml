@@ -16,7 +16,7 @@
     <messages>
         <message id="12000" name="PAD_CMD">
             <description>Command a landing pad light and color.</description>
-            <field type="uint8_t" name="light">On \ Off</field>
+            <field type="uint8_t" name="light"> 1 = On | 0 = Off</field>
 			<field type="uint8_t" name="Red">Red Value</field>
 			<field type="uint8_t" name="Green">Green Value</field>
 			<field type="uint8_t" name="Blue">Blue Value</field>
